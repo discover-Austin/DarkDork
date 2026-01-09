@@ -1,0 +1,25 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=DarkDork
+GenericName=Google Dorking Tool
+Comment=Professional Google Dorking Tool for Security Professionals
+Exec=darkdork
+Icon=darkdork
+Terminal=false
+Categories=Network;Security;Development;
+Keywords=security;dorking;google;osint;pentest;reconnaissance;
+StartupNotify=true
+StartupWMClass=DarkDork
+
+[Desktop Action Search]
+Name=Start Search
+Exec=darkdork
+
+[Desktop Action CustomDork]
+Name=Custom Dork Builder
+Exec=darkdork
+
+[Desktop Action History]
+Name=View History
+Exec=darkdork

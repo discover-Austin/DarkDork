@@ -1,0 +1,60 @@
+{
+  "presets": {
+    "conservative": {
+      "name": "Conservative (Respectful)",
+      "description": "Slow, respectful rate limiting for general use",
+      "rate_limit_seconds": 5,
+      "results_per_page": 10,
+      "auto_export": false,
+      "default_export_format": "csv"
+    },
+    "standard": {
+      "name": "Standard (Recommended)",
+      "description": "Balanced settings for most security assessments",
+      "rate_limit_seconds": 2,
+      "results_per_page": 10,
+      "auto_export": true,
+      "default_export_format": "csv"
+    },
+    "rapid": {
+      "name": "Rapid (Bug Bounty)",
+      "description": "Faster searches for time-sensitive work",
+      "rate_limit_seconds": 1,
+      "results_per_page": 20,
+      "auto_export": true,
+      "default_export_format": "json"
+    },
+    "forensics": {
+      "name": "Forensics (Documentation Heavy)",
+      "description": "Optimized for forensic investigations with detailed logging",
+      "rate_limit_seconds": 3,
+      "results_per_page": 10,
+      "auto_export": true,
+      "default_export_format": "html"
+    },
+    "pentesting": {
+      "name": "Penetration Testing",
+      "description": "Settings for professional penetration testing engagements",
+      "rate_limit_seconds": 2,
+      "results_per_page": 15,
+      "auto_export": true,
+      "default_export_format": "csv"
+    },
+    "compliance": {
+      "name": "Compliance Audit",
+      "description": "Conservative settings with comprehensive documentation",
+      "rate_limit_seconds": 4,
+      "results_per_page": 10,
+      "auto_export": true,
+      "default_export_format": "html"
+    }
+  },
+  "use_case_recommendations": {
+    "security_assessment": "standard",
+    "bug_bounty": "rapid",
+    "forensic_investigation": "forensics",
+    "penetration_testing": "pentesting",
+    "compliance_audit": "compliance",
+    "general_research": "conservative"
+  }
+}

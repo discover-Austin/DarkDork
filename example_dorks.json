@@ -1,0 +1,126 @@
+{
+  "metadata": {
+    "name": "Example Custom Dorks Library",
+    "description": "A collection of example dorks that can be imported into DarkDork",
+    "version": "1.0",
+    "author": "DarkDork Team",
+    "created": "2026-01-09"
+  },
+  "dorks": [
+    {
+      "name": "Find PDF Reports from 2024",
+      "query": "filetype:pdf \"annual report\" 2024",
+      "category": "Documents",
+      "description": "Finds annual reports published in 2024",
+      "severity": "Info"
+    },
+    {
+      "name": "WordPress Admin Login Pages",
+      "query": "inurl:wp-admin intitle:\"log in\"",
+      "category": "Login Pages",
+      "description": "Discovers WordPress admin login pages",
+      "severity": "Info"
+    },
+    {
+      "name": "Exposed Environment Files",
+      "query": "intitle:\"index of\" \".env\"",
+      "category": "Configuration",
+      "description": "Finds exposed .env configuration files",
+      "severity": "High"
+    },
+    {
+      "name": "SQL Database Dumps",
+      "query": "filetype:sql \"CREATE TABLE\" \"password\"",
+      "category": "Databases",
+      "description": "Locates SQL database dump files containing password tables",
+      "severity": "Critical"
+    },
+    {
+      "name": "API Documentation with Keys",
+      "query": "intitle:\"api documentation\" intext:\"api_key\" OR intext:\"api key\"",
+      "category": "API",
+      "description": "Finds API documentation that may contain example keys",
+      "severity": "Medium"
+    },
+    {
+      "name": "Camera Streams",
+      "query": "intitle:\"live view\" inurl:viewerframe",
+      "category": "IoT",
+      "description": "Discovers accessible camera streams",
+      "severity": "High"
+    },
+    {
+      "name": "Configuration Backups",
+      "query": "intitle:\"index of\" \"backup\" filetype:conf OR filetype:config",
+      "category": "Configuration",
+      "description": "Finds backup configuration files",
+      "severity": "High"
+    },
+    {
+      "name": "Git Repositories",
+      "query": "intitle:\"index of\" \".git\"",
+      "category": "Source Code",
+      "description": "Locates exposed .git directories",
+      "severity": "High"
+    },
+    {
+      "name": "phpMyAdmin Instances",
+      "query": "intitle:\"phpMyAdmin\" intext:\"Welcome to phpMyAdmin\"",
+      "category": "Databases",
+      "description": "Finds phpMyAdmin installations",
+      "severity": "Medium"
+    },
+    {
+      "name": "Cloud Storage Buckets",
+      "query": "site:s3.amazonaws.com OR site:storage.googleapis.com",
+      "category": "Cloud",
+      "description": "Searches for potentially exposed cloud storage",
+      "severity": "High"
+    },
+    {
+      "name": "Log Files with Errors",
+      "query": "filetype:log intext:\"error\" OR intext:\"exception\"",
+      "category": "Logs",
+      "description": "Finds log files containing errors",
+      "severity": "Low"
+    },
+    {
+      "name": "Private Keys",
+      "query": "filetype:pem intext:\"BEGIN RSA PRIVATE KEY\" OR filetype:key",
+      "category": "Credentials",
+      "description": "Searches for private key files",
+      "severity": "Critical"
+    },
+    {
+      "name": "Jenkins Instances",
+      "query": "intitle:\"Dashboard [Jenkins]\"",
+      "category": "CI/CD",
+      "description": "Locates Jenkins CI/CD installations",
+      "severity": "Medium"
+    },
+    {
+      "name": "Kubernetes Dashboards",
+      "query": "intitle:\"Kubernetes Dashboard\"",
+      "category": "DevOps",
+      "description": "Finds Kubernetes dashboard interfaces",
+      "severity": "High"
+    },
+    {
+      "name": "Docker Registries",
+      "query": "intitle:\"Docker Registry\" intext:\"v2\"",
+      "category": "DevOps",
+      "description": "Discovers Docker registry instances",
+      "severity": "Medium"
+    }
+  ],
+  "tips": [
+    "Always combine dorks with site: operator for targeted searches",
+    "Use quotes for exact phrase matching",
+    "Combine operators with OR for broader searches",
+    "Use minus (-) to exclude unwanted results",
+    "Remember to get authorization before testing any domain",
+    "Export your results for documentation",
+    "Use rate limiting to respect search engines"
+  ],
+  "usage": "Import this file by copying dorks to the Custom Dork Builder and saving them, or use them as inspiration for your own custom dorks."
+}
