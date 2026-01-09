@@ -1,0 +1,13 @@
+# DarkDork Requirements
+# Python 3.7+ required
+
+# Note: tkinter is included with Python standard library
+# No additional dependencies required for core functionality
+
+# Optional dependencies for enhanced features:
+# Uncomment if you need these features
+
+# requests>=2.31.0  # For programmatic web requests
+# beautifulsoup4>=4.12.0  # For parsing HTML results
+# selenium>=4.15.0  # For automated browser control
+# urllib3>=2.1.0  # Enhanced URL handling

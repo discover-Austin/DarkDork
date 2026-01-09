@@ -1,0 +1,7 @@
+# MANIFEST.in - Include additional files in distribution
+
+include README.md
+include LICENSE
+include CONTRIBUTING.md
+include requirements.txt
+recursive-include docs *.md
