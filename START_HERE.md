@@ -39,24 +39,53 @@ This document guides you through everything: using the tool, packaging it, and s
 
 ## ⚡ 5-Minute Quick Start
 
-### 1. Run the Application
+### 1. Choose Your Interface
 
+DarkDork offers two professional interfaces:
+
+#### 🎨 **Modern Interface** (NEW!) - DarkNexus-Inspired
+```bash
+cd /home/user/DarkDork
+python darkdork_modern.py
+```
+
+- Sleek dark theme with cyan accents
+- Card-based dork browsing
+- Visual query builder
+- 3-column grid layout
+- Perfect for quick dork execution
+
+👉 **See:** [MODERN_INTERFACE_README.md](MODERN_INTERFACE_README.md)
+
+#### 🔧 **Original Interface** - Full Featured
 ```bash
 cd /home/user/DarkDork
 python darkdork.py
 ```
 
-The GUI will open with a professional interface!
+- Traditional tabbed interface
+- Complete feature set
+- Extensive export options
+- Full database integration
+- Perfect for comprehensive assessments
+
+Both interfaces use the same powerful dork library!
 
 ### 2. Execute Your First Search
 
-1. **Select "Dork Categories" tab**
-2. **Choose "Exposed Documents"** from dropdown
-3. **Select any dork** from the list
-4. **(Optional) Enter target:** `example.com`
-5. **Click "Execute Dork"**
+**Modern Interface:**
+1. **Click a category** in left sidebar (e.g., "Exposed Documents")
+2. **Browse dork cards** in the main area
+3. **Click "🔍 Execute"** on any card
+4. Your browser opens with results! 🎉
 
-Your browser opens with results! 🎉
+**Original Interface:**
+1. **Select "Dork Categories" tab**
+2. **Choose category** from dropdown
+3. **Select any dork** from list
+4. **Click "Execute Dork"**
+
+Both work the same - choose what you prefer!
 
 ### 3. Try the CLI
 
@@ -78,8 +107,9 @@ python darkdork_cli.py --stats
 ```
 DarkDork/
 │
-├── 📱 CORE APPLICATION (4,500+ lines)
-│   ├── darkdork.py                    Main GUI application
+├── 📱 CORE APPLICATION (5,000+ lines)
+│   ├── darkdork.py                    Main GUI application (original)
+│   ├── darkdork_modern.py             ⭐ Modern GUI (DarkNexus-style)
 │   ├── darkdork_library.py            Advanced dork library (70+ dorks)
 │   ├── darkdork_cli.py                Command-line interface
 │   ├── darkdork_db.py                 SQLite database system
@@ -89,10 +119,11 @@ DarkDork/
 │   ├── darkdork_exports.py            7 export formats
 │   └── darkdork_updater.py            Auto-update system
 │
-├── 📚 DOCUMENTATION (9,000+ lines)
+├── 📚 DOCUMENTATION (10,000+ lines)
 │   ├── README.md                      Main documentation
 │   ├── USAGE_GUIDE.md                 ★ How to use (1,500 lines)
 │   ├── PACKAGING_DISTRIBUTION_GUIDE.md ★ How to package & sell (1,800 lines)
+│   ├── MODERN_INTERFACE_README.md     ⭐ Modern interface guide (NEW!)
 │   ├── QUICKSTART.md                  5-minute quick start
 │   ├── CHANGELOG.md                   Version history
 │   ├── docs/
