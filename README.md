@@ -8,15 +8,31 @@
 
 ### Installation
 
+**Option 1: Development Install (Recommended)**
+```bash
+# Clone/navigate to directory
+cd /path/to/DarkDork
+
+# Install in editable mode
+pip install -e .
+
+# Run from anywhere
+darkdork-pro
+```
+
+**Option 2: Direct Install**
 ```bash
 # Install dependencies
 pip install -r requirements_pro.txt
+
+# Run
+python darkdork_pro.py
 ```
 
-### Run
-
+**Option 3: Full Install with Optional Features**
 ```bash
-python darkdork_pro.py
+# Install with all optional integrations
+pip install -e ".[full]"
 ```
 
 **That's it!** The application opens with a modern dark interface, 70+ pre-loaded dorks, and all features ready to use.
@@ -119,11 +135,12 @@ DarkDork/
 ├── darkdork_library.py      # Dork database (70+ dorks)
 ├── darkdork_db.py           # SQLite database management
 ├── darkdork_exports.py      # Export to 7 formats
+├── setup.py                 # Package installer (pip install -e .)
 ├── requirements_pro.txt     # Dependencies
 └── README.md                # This file
 ```
 
-**That's it!** Just 5 files for a complete professional dorking tool.
+**That's it!** Just 7 files for a complete professional dorking tool.
 
 ---
 
