@@ -307,6 +307,36 @@ If you're interested in:
 
 Contact: [Your professional contact information]
 
+## 📚 Documentation
+
+DarkDork includes comprehensive documentation for all user levels:
+
+### For End Users
+- **[Quick Start Guide](QUICKSTART.md)** - Get started in 5 minutes
+- **[User Manual](docs/USER_MANUAL.md)** - Complete guide to all features (100+ pages)
+- **[Example Dorks Library](example_dorks.json)** - Pre-made dorks you can import
+
+### For Administrators & Distributors
+- **[Build Guide](docs/BUILD_GUIDE.md)** - Platform-specific build instructions
+- **[Report Templates](docs/REPORT_TEMPLATE.md)** - Professional reporting templates
+- **[Configuration Presets](config_presets.json)** - Pre-configured settings for different use cases
+
+### For Developers
+- **[Contributing Guide](CONTRIBUTING.md)** - How to contribute to the project
+- **[Changelog](CHANGELOG.md)** - Complete version history
+
+### Configuration Presets
+
+DarkDork includes pre-configured settings for common use cases:
+- **Conservative** - Slow, respectful rate limiting (5s delay)
+- **Standard** - Balanced settings (2s delay) - Recommended
+- **Rapid** - Faster searches for bug bounties (1s delay)
+- **Forensics** - Documentation-heavy with HTML exports
+- **Penetration Testing** - Optimized for pentest engagements
+- **Compliance Audit** - Conservative with comprehensive logging
+
+Load presets through Settings or edit `darkdork_config.json` directly.
+
 ## 📝 Changelog
 
 ### Version 1.0.0 (2026-01-09)
